@@ -1,0 +1,410 @@
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~
+$ mkdir projectGit01
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~
+$ ls
+'3D Objects'/
+ AndroidStudioProjects/
+ AppData/
+'Application Data'@
+'Array Questions'/
+ Assignment.php
+ Contacts/
+ Cookies@
+ Documents/
+ Downloads/
+ EV/
+ Favorites/
+ HTML-Basics/
+ IdeaProjects/
+ Links/
+'Local Settings'@
+ Microsoft/
+ MicrosoftEdgeBackups/
+ Movie/
+ Music/
+'My Documents'@
+ NPProt.bkp*
+ NPProt.exe*
+ NTUSER.DAT
+ NTUSER.DAT{8116b50c-23ed-11ee-90a1-ab2a183826cd}.TxR.0.regtrans-ms
+ NTUSER.DAT{8116b50c-23ed-11ee-90a1-ab2a183826cd}.TxR.1.regtrans-ms
+ NTUSER.DAT{8116b50c-23ed-11ee-90a1-ab2a183826cd}.TxR.2.regtrans-ms
+ NTUSER.DAT{8116b50c-23ed-11ee-90a1-ab2a183826cd}.TxR.blf
+ NTUSER.DAT{8116b50d-23ed-11ee-90a1-ab2a183826cd}.TM.blf
+ NTUSER.DAT{8116b50d-23ed-11ee-90a1-ab2a183826cd}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{8116b50d-23ed-11ee-90a1-ab2a183826cd}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+'New folder'/
+'New folder (2)'/
+ NodeJsTut/
+ OneDrive/
+ Pictures/
+ Portfolio/
+ Postman/
+ PrintHood@
+'REACT SERIES'/
+ ReactProjects/
+ Recent@
+ SearchEngine/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Tracing/
+ Videos/
+ binary_search.C
+ connectReact/
+ java_error_in_studio64_29248.log
+ javascript1/
+ newsapp/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+'opencv projects'/
+ profile.jpg
+ projectGit01/
+ tic-tac-toe/
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~
+$ cd    projectGit01
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01
+$ git init
+Initialized empty Git repository in C:/Users/Lenovo/projectGit01/.git/
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ ls
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ ls -a
+./  ../  .git/
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ ls .git
+HEAD  config  description  hooks/  info/  objects/  refs/
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ touch names.txt
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        names.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git add names.txt
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   names.txt
+
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git commit -m "names.txt file added"
+[master (root-commit) 2340696] names.txt file added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 names.txt
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ vi names.txt
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ cat names.txt
+Siddharth Desai
+Kunal Kushwaha
+
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   names.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git add .
+warning: in the working copy of 'names.txt', LF will be replaced by CRLF the next time Git touches it
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   names.txt
+
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git restore --staged names.txt
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   names.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git add names.txt
+warning: in the working copy of 'names.txt', LF will be replaced by CRLF the next time Git touches it
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   names.txt
+
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git commit -m "names.txt file modified"
+[master 07e688e] names.txt file modified
+ 1 file changed, 3 insertions(+)
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git log
+commit 07e688ed435c41c57d68e7a6c36ade5b5020da1c (HEAD -> master)
+Author: Siddharth-1301 <146066670+Siddharth-1301@users.noreply.github.com>
+Date:   Sun Apr 14 00:28:47 2024 +0530
+
+    names.txt file modified
+
+commit 2340696883b8f81acfbe7e529e9d8cc1672345f7
+Author: Siddharth-1301 <146066670+Siddharth-1301@users.noreply.github.com>
+Date:   Sun Apr 14 00:16:14 2024 +0530
+
+    names.txt file added
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ rm -rf names.txt
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    names.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git add .
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git commit -m "names.txt deleted"
+[master 791df3f] names.txt deleted
+ 1 file changed, 3 deletions(-)
+ delete mode 100644 names.txt
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git log
+commit 791df3f393f60fc516d624e5d6f8a39cd0ae72e1 (HEAD -> master)
+Author: Siddharth-1301 <146066670+Siddharth-1301@users.noreply.github.com>
+Date:   Sun Apr 14 00:31:55 2024 +0530
+
+    names.txt deleted
+
+commit 07e688ed435c41c57d68e7a6c36ade5b5020da1c
+Author: Siddharth-1301 <146066670+Siddharth-1301@users.noreply.github.com>
+Date:   Sun Apr 14 00:28:47 2024 +0530
+
+    names.txt file modified
+
+commit 2340696883b8f81acfbe7e529e9d8cc1672345f7
+Author: Siddharth-1301 <146066670+Siddharth-1301@users.noreply.github.com>
+Date:   Sun Apr 14 00:16:14 2024 +0530
+
+    names.txt file added
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ ^C
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$  git reset 2340696883b8f81acfbe7e529e9d8cc1672345f7
+Unstaged changes after reset:
+D       names.txt
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git log
+commit 2340696883b8f81acfbe7e529e9d8cc1672345f7 (HEAD -> master)
+Author: Siddharth-1301 <146066670+Siddharth-1301@users.noreply.github.com>
+Date:   Sun Apr 14 00:16:14 2024 +0530
+
+    names.txt file added
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    names.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git add .
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    names.txt
+
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ giy status
+bash: giy: command not found
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    names.txt
+
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ touch surnames.txt
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git add .
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    names.txt -> surnames.txt
+
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ vi surnames.txt
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ touch houses.txt
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git add .
+warning: in the working copy of 'surnames.txt', LF will be replaced by CRLF the next time Git touches it
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git statu
+git: 'statu' is not a git command. See 'git --help'.
+
+The most similar commands are
+        status
+        stage
+        stash
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    names.txt -> houses.txt
+        new file:   surnames.txt
+
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git stash
+Saved working directory and index state WIP on master: 2340696 names.txt file added
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git log
+commit 2340696883b8f81acfbe7e529e9d8cc1672345f7 (HEAD -> master)
+Author: Siddharth-1301 <146066670+Siddharth-1301@users.noreply.github.com>
+Date:   Sun Apr 14 00:16:14 2024 +0530
+
+    names.txt file added
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git stash pop
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   houses.txt
+        new file:   surnames.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    names.txt
+
+Dropped refs/stash@{0} (2eac0b171bd701637ca83f0c10ffd8920a856c82)
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git stash clear
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   houses.txt
+        new file:   surnames.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    names.txt
+
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git remote add origin https://github.com/Sidx005/Portfolio3.git
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git remote -v
+origin  https://github.com/Sidx005/Portfolio3.git (fetch)
+origin  https://github.com/Sidx005/Portfolio3.git (push)
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git  push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 237 bytes | 237.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Sidx005/Portfolio3/pull/new/master
+remote:
+To https://github.com/Sidx005/Portfolio3.git
+ * [new branch]      master -> master
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
+$ git remote -v
+origin  https://github.com/Sidx005/Portfolio3.git (fetch)
+origin  https://github.com/Sidx005/Portfolio3.git (push)
+
+Lenovo@DESKTOP-VQ6F5M8 MINGW64 ~/projectGit01 (master)
